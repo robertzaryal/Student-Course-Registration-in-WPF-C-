@@ -1,0 +1,43 @@
+﻿<Window x:Class="StudentCourseRegistration.addCourseRecordForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentCourseRegistration"
+        mc:Ignorable="d"
+        Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Loaded="Window_Loaded">
+    <Grid MouseDown="Grid_MouseDown">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,2" EndPoint="1,0.3">
+                <GradientStop Color="#0f2027" Offset="1.0" />
+                <GradientStop Color="#203a43" Offset="0.1" />
+                <GradientStop Color="#2c5364" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Margin="10" Width="350" HorizontalAlignment="Left">
+                <StackPanel Margin="5 20" HorizontalAlignment="Left" Orientation="Horizontal">
+                    <Label Content="Course Name: " Foreground="White" FontSize="14" Width="100"/>
+                    <TextBox TextWrapping="Wrap" x:Name="coursenametxtBox" Width="200" Background="Transparent" Foreground="White" BorderBrush="White"/>
+                </StackPanel>
+
+                <StackPanel Margin="5 20" HorizontalAlignment="Left" Orientation="Horizontal">
+                    <Label Content="Course Code: " Foreground="White" FontSize="14" Width="100"/>
+                    <TextBox TextWrapping="Wrap" x:Name="coursecodetxtBox" Width="200" Background="Transparent" Foreground="White" BorderBrush="White"/>
+                </StackPanel>
+
+                <StackPanel>
+                    <DataGrid x:Name="coursegrid" Height="290"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Button Click="addButton_Click" HorizontalAlignment="Left" Margin="10" x:Name="addButton" Content="Add Record" FontSize="12" Width="120" Height="40" Foreground="White" Background="#2c1264"/>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+                <Button Click="backButton_Click" x:Name="backButton" Content="Back to Mainpage" FontSize="12" Width="120" Height="40" Foreground="White" Background="#2c1264"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
