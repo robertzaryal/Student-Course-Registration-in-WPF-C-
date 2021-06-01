@@ -2,7 +2,7 @@
 - 👀 I’m interested in Machine Learning
 - 🌱 I’m currently learning Convolutional Neural Networks, APIs, Natural Language Processing
 - 💞️ I’m looking to collaborate on Github
-- 📫 Reach me at robertzaryal@outlook.com ... insta @
+- 📫 Reach me at robertzaryal@outlook.com ... insta @robert.zaryal
 
 <!---
 robertzaryal/robertzaryal is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
